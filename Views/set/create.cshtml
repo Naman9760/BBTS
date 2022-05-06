@@ -1,0 +1,45 @@
+﻿
+
+<div class="row">
+    <div class="col-6 offset-3">
+       <div class="card">
+           <div class="card-header">
+               <h4>Add Employee</h4>
+           </div>
+           <div class="card-body">
+               @using(Html.BeginForm("create", "set", FormMethod.Post))
+               {
+                   <div class="form-group">
+                       <lable>Employee Name</lable>
+                       <input type="text" class="form-control" name="ename" />
+                   </div>
+                   <div class="form-group">
+                       <lable>Employee Gender</lable>
+                       <select class="form-control" name="gender">
+                           <option value="">select</option>
+                           <option value="Male">Male</option>
+                           <option value="Female">Female</option>
+                       </select>
+                       
+                   </div>
+                   <div class="form-group">
+                       <lable>Employee City</lable>
+                       <input type="text" class="form-control" name="City" />
+                   </div>
+                   <div class="form-group">
+                       <lable>Employee Salary</lable>
+                       <input type="text" class="form-control" name="salary" />
+                   </div>
+                   <div class="form-group">
+                       
+                       <input type="submit" value="submit" class="btn btn-info" />
+                   </div>
+
+               }
+
+           </div>
+       </div>
+ </div>
+
+</div>
+

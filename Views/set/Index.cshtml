@@ -1,0 +1,29 @@
+﻿@model IEnumerable<BBTS.Models.employee>
+
+
+
+<h1>Employee List</h1>
+
+@Html.ActionLink("Add Employee", "create", "set")
+<table class=" table table-bordered">
+    <tr>
+        <th>EID</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>City</th>
+        <th>Salary</th>
+    </tr>
+    @foreach (var max in Model)
+    {
+        <tr>
+            <td>@max.eid</td>
+            <td>@max.ename</td>
+            <td>@max.gender</td>
+            <td>@max.city</td>
+            <td>@max.salary</td>
+            <td>@max</td>
+        </tr>
+    }
+</table>
+
+
